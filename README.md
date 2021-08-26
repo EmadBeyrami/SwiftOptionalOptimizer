@@ -5,9 +5,9 @@ Are you tired of using "??" in your code base?
 Did you know it can increase your build time?
 
 ## Usage
-1 give this repo a Star
-2 add the containing file to your project
-3 codebase example:
+1. give this repo a Star
+2. add the containing file to your project
+3. codebase example:
 instead of using:
 ```
 let nulableString: String? = nil
