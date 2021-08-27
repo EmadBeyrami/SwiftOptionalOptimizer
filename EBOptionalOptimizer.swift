@@ -1,43 +1,31 @@
 // MARK: incase you forget the source the repo address is : https://github.com/EmadBeyrami/SwiftOptionalOptimizer/
 
-// MARK: - Strng Cases
-extension Optional where Wrapped == String {
-    var orEmpty: String {
-        switch self {
-        case .some(let value):
-            return value
-        case .none:
-            return ""
-        }
-    }
-    
-    var orDashed: String {
-        switch self {
-        case .some(let value):
-            return value
-        case .none:
-            return "-"
-        }
-    }
-    
-    var orZero: String {
-        switch self {
-        case .some(let value):
-            return value
-        case .none:
-            return "0"
-        }
-    }
+// MARK: Wrapper for types with an empty initializer
+protocol EmptyInitCompatible { init() }
+
+extension Optional where Wrapped: EmptyInitCompatible {
+    var orEmpty: Wrapped { self ?? Wrapped.init() }
 }
 
-// MARK: - Int Type cases
-extension Optional where Wrapped == Int {
-    var orZero: Int {
-        switch self {
-        case .some(let value):
-            return value
-        case .none:
-            return 0
-        }
-    }
-}
+// MARK: - Standard types
+
+extension String : EmptyInitCompatible { }
+extension Bool   : EmptyInitCompatible { }
+
+// MARK: - Numeric types
+
+extension Double : EmptyInitCompatible { }
+extension Float  : EmptyInitCompatible { }
+extension Int    : EmptyInitCompatible { }
+extension Int8   : EmptyInitCompatible { }
+extension Int16  : EmptyInitCompatible { }
+extension Int32  : EmptyInitCompatible { }
+extension Int64  : EmptyInitCompatible { }
+extension UInt   : EmptyInitCompatible { }
+extension UInt8  : EmptyInitCompatible { }
+extension UInt16 : EmptyInitCompatible { }
+extension UInt32 : EmptyInitCompatible { }
+extension UInt64 : EmptyInitCompatible { }
+
+// TODO: Add more types with an empty `init`
+
