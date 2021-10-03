@@ -7,8 +7,8 @@ Did you know it can increase your build time?
 ## Usage
 1. Give this repo a **Star** ⭐️
 2. Add the containing file to your project
-3. Codebase example:
-Instead of using: <br/>
+3. Codebase example: <br />
+Instead of using:
 ``` swift
 let nulableString: String?
 
