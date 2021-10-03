@@ -25,4 +25,4 @@ print(nulableString.orEmpty)
 
 ## Warning: 
 you can add up other types currently supported: 
-> String, Int
+> String, Int, Bool, Double, Float
