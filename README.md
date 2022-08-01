@@ -26,3 +26,7 @@ print(nulableString ?? "")
 ## Warning: 
 you can add up other types currently supported: 
 > String, Int, Bool, Double, Float
+
+
+#### Buy me a coffee:
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=FRY432D75E4Q2)
