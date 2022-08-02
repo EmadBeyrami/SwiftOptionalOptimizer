@@ -30,3 +30,4 @@ you can add up other types currently supported:
 
 #### Buy me a coffee:
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=FRY432D75E4Q2)
+[![crypto](https://en.bitcoin.it/w/images/en/7/74/BC_Rnd_64px.png)](https://nowpayments.io/donation/emad)
